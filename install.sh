@@ -57,7 +57,7 @@ cd $HOME
 
 blue "下载需要的东西 ...";echo
 
-git clone https://github.com/guleonseon/gcs-auto.git
+git clone https://github.com/guleonseon/goorm-auto.git
 
 sleep 1
 

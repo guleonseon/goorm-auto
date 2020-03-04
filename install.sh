@@ -36,7 +36,7 @@ else
   exit 0
 fi
 
-if [[ -d $HOME/.gcs ]]
+if [[ -d $HOME/.goorm ]]
 then
   green "兄弟，老实交代是不是安装过了,要重新安装吗？[Y/n]"
   read confirm
@@ -68,13 +68,13 @@ then
   cp $HOME/.bashrc $HOME/.bashrc_bak
 fi
 
-#copy .gcs to $HOME
-cp -r gcs-auto/.gcs $HOME
+#copy .goorm to $HOME
+cp -r goorm-auto/.goorm $HOME
 
 #配置自动运行
-cat gcs-auto/profile >> .bashrc
+cat goorm-auto/profile >> .bashrc
 
-.gcs/service.sh
+.goorm/service.sh
 
 sleep 2
 

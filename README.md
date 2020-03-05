@@ -16,6 +16,7 @@
 
 ### 3、开放内部端口
 ![image](https://github.com/guleonseon/goorm-auto/blob/master/port.png)
+![image](https://github.com/guleonseon/goorm-auto/blob/master/config.png)
 
 ### 4、愉快的科学上网
 在系统代理或者chrome的[SwithyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)配置你的代理服务器和端口，注意选择`socks5`

@@ -45,7 +45,7 @@ then
   then
     cd $HOME
     kill -9 `pidof v2ray` 2>/dev/null
-    rm -fr .goormide.goormide-auto 2>/dev/null
+    rm -fr .goormide goorm-auto 2>/dev/null
     mv .bashrc_bak .bashrc
   else
     green "拜拜";echo
@@ -57,7 +57,7 @@ cd $HOME
 
 blue "下载需要的东西 ...";echo
 
-git clone https://github.com/guleonseon.goormide-auto.git
+git clone https://github.com/guleonseon/goorm-auto.git
 
 sleep 1
 

@@ -4,7 +4,7 @@
 ###		This is a services script		###
 ###########################################################
 
-LOCAL=$HOME/.goorm
+LOCAL=$HOME/.goormide
 
 if [[ ! -d $LOCAL/log ]]
 then

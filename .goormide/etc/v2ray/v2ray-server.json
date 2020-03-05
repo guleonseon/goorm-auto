@@ -11,29 +11,6 @@
             "settings": {
                 "udp": true
             }
-        },
-        {
-            "port": 38528,
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "ff8385f4-db8a-436f-8ac3-90b7b95ec6fd",
-                        "level": 1,
-                        "alterId": 233
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp"
-            },
-            "sniffing": {
-                "enabled": true,
-                "destOverride": [
-                    "http",
-                    "tls"
-                ]
-            }
         }
     ],
     "outbounds": [

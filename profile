@@ -1,15 +1,15 @@
 ##---------------我是分割线----------------##
-export PATH=$HOME/.gcs/bin:$PATH
 
 rm README-cloudshell.txt 2>/dev/null
 
 echo Starting Service ...
-.goorm/service.sh
+.goormide/service.sh
 
 echo Checking IP address ...
 CIP=`curl -s icanhazip.com`
 FIP=`cat .ip 2>/dev/null`
 
+sleep 1
 
 if [[ $CIP == $FIP  ]];
 then

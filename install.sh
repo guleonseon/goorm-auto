@@ -36,7 +36,7 @@ else
   exit 0
 fi
 
-if [[ -d $HOME/.goorm ]]
+if [[ -d $HOME/.goormide ]]
 then
   green "兄弟，老实交代是不是安装过了,要重新安装吗？[Y/n]"
   read confirm
@@ -45,7 +45,7 @@ then
   then
     cd $HOME
     kill -9 `pidof v2ray` 2>/dev/null
-    rm -fr .goorm goorm-auto 2>/dev/null
+    rm -fr .goormide.goormide-auto 2>/dev/null
     mv .bashrc_bak .bashrc
   else
     green "拜拜";echo
@@ -57,7 +57,7 @@ cd $HOME
 
 blue "下载需要的东西 ...";echo
 
-git clone https://github.com/guleonseon/goorm-auto.git
+git clone https://github.com/guleonseon.goormide-auto.git
 
 sleep 1
 
@@ -68,13 +68,13 @@ then
   cp $HOME/.bashrc $HOME/.bashrc_bak
 fi
 
-#copy .goorm to $HOME
-cp -r goorm-auto/.goorm $HOME
+#copy .goormide to $HOME
+cp -r goorm-auto/.goormide $HOME
 
 #配置自动运行
-cat goorm-auto/profile >> .bashrc
+cat goormide-auto/profile >> .bashrc
 
-.goorm/service.sh
+.goormide/service.sh
 
 sleep 2
 
